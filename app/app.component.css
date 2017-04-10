@@ -1,0 +1,14 @@
+body{
+  margin:auto;
+  width:70%;
+  height:70%;
+}
+
+.title{
+  border-top: 3px solid deepskyblue;
+  border-bottom: 3px solid deepskyblue;
+  font-family: Calibri;
+  text-align: center;
+  font-size: 20px;
+  color: darkorange;
+}

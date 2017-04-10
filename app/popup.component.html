@@ -1,0 +1,7 @@
+<div [hidden]="isVisible()" class="Hasil"  >
+  <div class="Tombol" (click)="onClose()">x</div>
+  <h2>Title : {{ book ? book.title : ""}}</h2>
+  <div>Category : {{ book ? book.category: "" }}</div>
+  <div>Year : {{ book ? book.year : "" }}</div>
+  <div>Price : {{book ? book.price : ""}}</div>
+</div>

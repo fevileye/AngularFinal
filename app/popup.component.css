@@ -1,0 +1,15 @@
+.Hasil{
+  background-color:white;
+  top:40%;
+  left:40%;
+  height:200px;
+  width:200px;
+  padding:25px;
+  position:fixed;
+}
+
+.Tombol{
+  text-align: right;
+  color:cadetblue;
+}
+

@@ -1,0 +1,9 @@
+<header>
+ In Stock : {{books|StockList}}
+</header>
+<book-component *ngFor="let book of books"
+[book]="book"
+(delete)="onDeleteOperation($event)"
+(preview)="onPreviewOperation($event)"
+></book-component>
+<book-popup [book]=data (close)="onCallClose()"></book-popup>
