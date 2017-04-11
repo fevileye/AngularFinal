@@ -38,7 +38,6 @@ export class MockXHRBackend {
           }
           break;
         case RequestMethod.Post:
-          console.log("Masuk");
           var book = JSON.parse(request.text().toString());
           book.id = this._getNewId();
           this._books.push(book);
@@ -67,7 +66,6 @@ export class MockXHRBackend {
   }
 
   _getNewId() {
-    console.log("Masuk1");
     if (this._books.length > 0) {
       return Math.max.apply(Math, this._books.map(book => book.id)) + 1;
     }

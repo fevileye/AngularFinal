@@ -24,8 +24,11 @@ export class BookFormComponent{
         Validators.pattern('[\\w\\-\\s\\/]+')
       ])),
       category: this.formBuilder.control('Comics'),
-      year: this.formBuilder.control('', this.yearValidator),
-      price: this.formBuilder.control(''),
+      year: this.formBuilder.control('', Validators.compose([
+		this.yearValidator,
+		Validators.required
+	  ])),
+      price: this.formBuilder.control('',Validators.required),
     });
   }
 
